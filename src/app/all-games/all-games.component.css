@@ -1,0 +1,22 @@
+#all-games{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: gainsboro;
+}
+
+.game{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.filter-area{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(55, 55, 55);
+    padding: 20px;
+    color: white;
+}

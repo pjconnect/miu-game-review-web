@@ -1,0 +1,8 @@
+.logo{
+    background-image: url('../../assets/images/logo_transparent.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 210px;
+    margin: 0 auto;
+}
