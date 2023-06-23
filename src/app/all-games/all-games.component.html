@@ -1,7 +1,7 @@
 <div>
     <div class="filter-area">
         <label for="Search">Search
-            <input type="text" placeholder="Search Game">
+            <input type="text" placeholder="Search Game" (input)="search()" [(ngModel)]="searchText">
         </label>
     </div>
     <div id="all-games">

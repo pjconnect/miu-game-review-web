@@ -1,11 +1,11 @@
-#all-games{
+#all-games {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: gainsboro;
 }
 
-.game{
+.game {
     max-width: 250px;
     display: flex;
     flex-direction: column;
@@ -13,27 +13,30 @@
     border-radius: 5px;
 }
 
-.game img{
+.game img {
     width: 150px;
 }
 
-.filter-area{
+.filter-area {
     display: flex;
     justify-content: flex-end;
-    background-color: rgb(55, 55, 55);
-    padding: 20px;
+    background-color: #33425b;
+    padding: 0 10px 10px 10px;
     color: white;
 }
 
-.pagination{
+.pagination {
     display: flex;
     flex-wrap: wrap;
 }
-.page{
-    width: 50px;
-    height: 50px;
+
+.page .btn{
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: beige;
+    background-color: #33425b;
+    color: white;
+    font-weight: bold;
 }

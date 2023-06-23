@@ -14,8 +14,8 @@ export class ApiService {
     return this.http.get(environment.apiUrl)
   }
 
-  getAllGames(skip: number, limit: number) {
-    return this.http.get<GameResponse>(`${environment.apiUrl}/games?skip=${skip}&limit=${limit}`)
+  getAllGames(skip: number, limit: number, searchText: string) {
+    return this.http.get<GameResponse>(`${environment.apiUrl}/games?skip=${skip}&limit=${limit}&searchText=${searchText}`)
   }
 
   getGameDetail(gameId: string) {
