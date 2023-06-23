@@ -1,0 +1,22 @@
+#alert-component{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.error{
+    padding: 10px;
+    flex-grow: 1;
+    background-color: #c46d6d;
+}
+
+.success{
+    padding: 10px;
+    flex-grow: 1;
+    background-color: #4ebf67;
+}
+
+.btn{
+    border-radius: 0 !important;
+}
+
+

@@ -1,0 +1,52 @@
+<div>
+  <div class="content-area">
+    <form  [formGroup]="form" (ngSubmit)="onsubmit()">
+      <label>
+        Name
+        <input formControlName="name">
+      </label>
+      <label for="platform">
+        Platform
+        <select id="platform" formControlName="platform">
+          <option value="">Select Platform Options</option>
+          <option>PC</option>
+          <option>PS4</option>
+          <option>Nintendo</option>
+          <option>Xbox One</option>
+          <option>Xbox Series X</option>
+          <option>PlayStation 5</option>
+          <option>Switch</option>
+          <option>Mobile</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <label for="releasedYear">
+        Released Year
+        <input id="releasedYear" type="number" min="1900" max="2099" step="1" value="2016"
+               formControlName="releasedYear"
+        />
+      </label>
+      <label for="pictureURL">
+        PictureURL
+        <input id="pictureUrl" formControlName="pictureUrl">
+      </label>
+      <label for="price">
+        price
+        <input id="price" type="number" formControlName="price">
+      </label>
+      <label for="motionPictureRate">
+        Motion Picture Rate
+        <select id="motionPictureRate"formControlName="motionPictureRate">
+          <option value="">Select Motion Picture Rating</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </label>
+      <button class="btn btn-secondary btn-sm" (click)="resetForm()" type="button">Reset Form</button>
+      <button class="btn btn-primary" type="submit">Add Game</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div>
+    <div *ngIf="game">
+        <h1>{{game.name}}</h1>
+        <p>
+            {{game.description}}
+        </p>
+        <img [src]="game.pictureURL">
+    </div>
+    <button (click)="onDelete()" class="btn btn-danger" *ngIf="auth.isLoggedIn">Delete</button>
+</div>

@@ -4,6 +4,10 @@
     padding: 10px;
 }
 
+a{
+    color:white;
+}
+
 /* bootstrap css override */
 p, ul{
     margin: 0;

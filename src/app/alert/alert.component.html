@@ -1,0 +1,9 @@
+<div id="alert-component" *ngIf="alert.errorMessage || alert.successMessage">
+    <div class="error" *ngIf="alert.errorMessage">
+        {{alert.errorMessage}}
+    </div>
+    <div class="success" *ngIf="alert.successMessage">
+        {{alert.successMessage}}
+    </div>
+    <button (click)="alert.clear()" class="btn btn-primary">close</button>
+</div>

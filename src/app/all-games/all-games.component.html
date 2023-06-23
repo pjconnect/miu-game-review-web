@@ -5,12 +5,18 @@
         </label>
     </div>
     <div id="all-games">
-        <div class="game"></div>
-        <div class="game"></div>
-        <div class="game"></div>
-        <div class="game"></div>
-        <div class="game"></div>
-        <div class="game"></div>
-        <div class="game"></div>
+        <div *ngFor="let game of games">
+            <a [routerLink]="game._id" class="game">
+                <img [src]="game.pictureURL"/>
+                {{game.name}}
+            </a>
+        </div>
+    </div>
+    <div class="pagination">
+        <div class="page" *ngFor="let page of pages; let i=index">
+            <a  class="btn" (click)="getPageResult(i)">
+                {{i+1}}
+            </a>
+        </div>
     </div>
 </div>

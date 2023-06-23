@@ -1,0 +1,19 @@
+<div>
+    <div *ngIf="token">
+        <h2>Welcome back</h2>
+        <div class="btn btn-primary" (click)="onLogOut()">Logout</div>
+    </div>
+    <div *ngIf="!token">
+        <label for="Username">
+            Username
+        </label>
+        <input id="Username" [(ngModel)]="username">
+        <label for="password">
+            Password
+        </label>
+        <input id="password" type="password" [(ngModel)]="password">
+        <div>
+            <button class="btn btn-primary" (click)="onLogin()">Login</button>
+        </div>
+    </div>
+</div>
