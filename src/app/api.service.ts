@@ -40,10 +40,12 @@ export class LoginResponse {
 export class Game {
   _id!: string;
   name!: string;
-  rate!: string;
+  rating!: string;
   pictureURL!: string;
   platform!:string;
   description!: string;
+  year!: string;
+  price!: number;
 }
 
 export class GameResponse {

@@ -1,6 +1,6 @@
 <div>
   <div class="content-area">
-    <form  [formGroup]="form" (ngSubmit)="onsubmit()">
+    <form [formGroup]="form" (ngSubmit)="onsubmit()">
       <label>
         Name
         <input formControlName="name">
@@ -23,8 +23,7 @@
       <label for="releasedYear">
         Released Year
         <input id="releasedYear" type="number" min="1900" max="2099" step="1" value="2016"
-               formControlName="releasedYear"
-        />
+          formControlName="releasedYear" />
       </label>
       <label for="pictureURL">
         PictureURL
@@ -36,14 +35,18 @@
       </label>
       <label for="motionPictureRate">
         Motion Picture Rate
-        <select id="motionPictureRate"formControlName="motionPictureRate">
+        <select id="motionPictureRate" formControlName="motionPictureRate">
           <option value="">Select Motion Picture Rating</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
+          <option value="G">G - General Audiences:</option>
+          <option value="PG">PG - Parental Guidance Suggested</option>
+          <option value="PG-13"> PG-13 - Parents Strongly Cautioned</option>
+          <option value="PG-13"> R - Restricted: Restricted to viewers over the age of 17 (18 in some areas)</option>
+          <option value="NC-17">NC-17 - No One 17 and Under Admitted: No one 17 and under is admitted. </option>
         </select>
+      </label>
+      <label for="description">
+        Description
+        <textarea formControlName="description"></textarea>
       </label>
       <button class="btn btn-secondary btn-sm" (click)="resetForm()" type="button">Reset Form</button>
       <button class="btn btn-primary" type="submit">Add Game</button>

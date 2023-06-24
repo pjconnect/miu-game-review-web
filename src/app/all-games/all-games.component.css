@@ -11,6 +11,7 @@
     flex-direction: column;
     margin: 5px;
     border-radius: 5px;
+    position: relative;
 }
 
 .game img {
@@ -28,6 +29,13 @@
 .pagination {
     display: flex;
     flex-wrap: wrap;
+}
+
+.rating{
+    position: absolute;
+    background-color: rebeccapurple;
+    border-radius: 1px;
+    font-size: 15px;
 }
 
 .page .btn{

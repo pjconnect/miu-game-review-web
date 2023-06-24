@@ -27,6 +27,7 @@ export class AddGameComponent implements OnInit {
       releasedYear: new FormControl(new Date().getFullYear(), Validators.required),
       pictureUrl: new FormControl('', Validators.required),
       price: new FormControl('', Validators.required),
+      description: new FormControl('', Validators.required),
       motionPictureRate: new FormControl('', Validators.required),
     });
   }
@@ -38,7 +39,10 @@ export class AddGameComponent implements OnInit {
         name: this.form.get('name')?.value,
         platform: this.form.get('platform')?.value,
         pictureURL: this.form.get('pictureUrl')?.value,
-        rate: this.form.get('motionPictureRate')?.value,
+        rating: this.form.get('motionPictureRate')?.value,
+        year: this.form.get('releasedYear')?.value,
+        price: this.form.get('price')?.value,
+        description: this.form.get('description')?.value,
       } as Game;
 
       this.apiService.addGame(game).subscribe({

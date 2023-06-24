@@ -10,6 +10,10 @@ label{
     display: block;
 }
 
+textarea{
+    display: block;
+}
+
 label input{
  display: block;
 }

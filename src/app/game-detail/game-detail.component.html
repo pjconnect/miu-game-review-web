@@ -4,6 +4,9 @@
         <p>
             {{game.description}}
         </p>
+        <label>Year: {{game.year}}</label>
+        <label>Rating: {{game.rating}}</label>
+        <label>Price: {{game.price}}</label>
         <img [src]="game.pictureURL">
     </div>
     <button (click)="onDelete()" class="btn btn-danger" *ngIf="auth.isLoggedIn">Delete</button>
