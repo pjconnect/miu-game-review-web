@@ -1,3 +1,3 @@
 # MIU PHP
 
-This is a client and a server written in Angular for the UI, Node, and Express for the backend and it uses MongoDB. 
+This is a client and a server written in Angular, Node, and Express and uses MongoDB. 
