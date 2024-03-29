@@ -1,3 +1,3 @@
-# MIU PHP
+# MIU Coursework
 
-This is a client and a server written in Angular, Node, and Express and uses MongoDB. 
+### Used Angular, Node, Express, and MongoDB. 
